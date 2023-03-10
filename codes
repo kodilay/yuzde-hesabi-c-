@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Bir sayı girin: ");
+        double sayi = double.Parse(Console.ReadLine());
+
+        Console.Write("Yüzde kaçını hesaplamak istiyorsunuz?: ");
+        double yuzde = double.Parse(Console.ReadLine());
+
+        double sonuc = sayi * yuzde / 100;
+        Console.WriteLine("{0} sayısının %{1} değeri {2} dir.", sayi, yuzde, sonuc);
+
+        Console.ReadKey();
+    }
+}
